@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego Educativo Memorama</title>
+    <link rel="icon" href="./imagen/icono.png" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="custom-alert-overlay" id="customAlertOverlay"></div>
+    <div class="tiempo">
+        <img src="./imagen/reloj.png" width="3.7%" height="3.7%" />
+        <h2 class="t_restante" class="estadisticas"><span id="contador_cronometro">80</span> segundos</h2>
+    </div>
+    <main> 
+        <section class="section1">
+            <div class="figura">
+                <img  src="./imagen/alber.png" width="85%" height="85%" />
+            </div>
+            <h2 class="player">Jugador 1</h2>
+            <h2 class="acierto1" class="estadisticas1">Aciertos: <span id="contador_aciertos1">0</span></h2>
+            <h2 class="movimientos1" class="estadisticas1">Erradas: <span id="contador_errada1">0</span></h2>
+            <h2 class="player1" id="turno1" >..Inicie el Juego..</h2>
+        </section>
+        <section class="section2">
+            <div class="logo">
+                <img src="./imagen/LOGO.png" width="80%" height="30%" />
+            </div>
+            <table class="botones">
+                <tr>
+                    <td><button id="0" onclick="destapar(0)" class="card"></button></td>
+                    <td><button id="1" onclick="destapar(1)" class="card"></button></td>
+                    <td><button id="2" onclick="destapar(2)" class="card"></button></td>
+                    <td><button id="3" onclick="destapar(3)" class="card"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="4" onclick="destapar(4)" class="card"></button></td>
+                    <td><button id="5" onclick="destapar(5)" class="card"></button></td>
+                    <td><button id="6" onclick="destapar(6)" class="card"></button></td>
+                    <td><button id="7" onclick="destapar(7)" class="card"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="8" onclick="destapar(8)" class="card"></button></td>
+                    <td><button id="9" onclick="destapar(9)" class="card"></button></td>
+                    <td><button id="10" onclick="destapar(10)" class="card"></button></td>
+                    <td><button id="11" onclick="destapar(11)" class="card"></button></td>
+                </tr>
+                <tr>
+                    <td><button id="12" onclick="destapar(12)" class="card"></button></td>
+                    <td><button id="13" onclick="destapar(13)" class="card"></button></td>
+                    <td><button id="14" onclick="destapar(14)" class="card"></button></td>
+                    <td><button id="15" onclick="destapar(15)" class="card"></button></td>
+                </tr>
+            </table>
+            <div class="inicio">
+                <button class="start">Iniciar Juego</button>
+            </div>  
+        </section>
+        <section class="section3">
+            <div class="figura">
+                <img src="./imagen/issac.png" width="85%" height="85%" />
+            </div>
+            <h2 class="player">Jugador 2</h2>
+            <h2 class="acierto" class="estadisticas">Aciertos: <span id="contador_aciertos">0</span></h2>
+            <h2 class="movimientos" class="estadisticas">Erradas: <span id="contador_errada">0</span></h2>
+            <h2 class="player1" id="turno2" >..Inicie el Juego..</h2>
+        </section>
+    </main>
+    <div class="custom-alert" id="customAlert">
+        <h2></h2>
+        <p></p>
+        <div class="container">
+        <button onclick="cerrarAlerta()"></button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
+
+
